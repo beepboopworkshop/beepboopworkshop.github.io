@@ -1,0 +1,22 @@
+<ul>
+    <li>Kits:
+        <ul class="horizontal">
+            {% for k in site.kits %}
+            <li><a href="{{k.url}}">{{ k.kit_name }}</a></li>
+            {% endfor %}
+        </ul>
+    </li>
+    <li>Workshops: <ul class="horizontal">
+            {% for w in site.workshops %}
+            <li><a href="{{w.url}}">{{w.workshop_name}}</a></li>
+            {% endfor %}
+        </ul>
+    </li>
+    {% if site.posts.size > 0 %}<li>Blogs
+        <ul class="horizontal">
+            {% for p in site.posts %}
+            <li><a href="{{p.url}}">{{p.title}}</a></li>
+            {% endfor %}
+        </ul>
+    </li>{% endif %}
+</ul>

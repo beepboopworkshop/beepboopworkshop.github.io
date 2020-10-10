@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<h1>{{page.workshop_name}}</h1>
+<p>{{page.price}} - <i>This is a {{page.level}} level workshop.</i></p>
+
+{{content}}
+
+{% for k in site.kits %}
+{% if k.workshop == page.slug %}
+<p>
+    Just want the kit? Go <a href="{{k.url}}">here to order one</a> & we'll get
+    it in the post!</p>
+{%endif%}
+{% endfor %}
+
+<p>
+    Book your one to one workshop on our <a href="{{site.facebook}}">Facebook page</a> or
+    drop us an <a href="mailto:{{site.email}}">email</a> for more details. Workshop price
+    covers all parts, components, tools and help, you just need to turn up!
+</p>
+
+{% if page.tags %}<ul class="horizontal tags">
+    {% for t in page.tags %}
+    <li>{{t}}</li>
+    {%endfor %}
+</ul>{% endif %}

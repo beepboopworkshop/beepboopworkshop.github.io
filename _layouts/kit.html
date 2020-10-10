@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<h1>{{page.kit_name}}</h1>
+<p>{{page.price}}</p>
+{{content}}
+{% if page.workshop %}
+<p>Why not come in & build one in our <a href="/workshops/{{ page.workshop }}/index.html">workshop</a>?</p>
+{% endif %}
+{% if page.tags %}<ul class="horizontal tags">
+    {% for t in page.tags %}
+    <li>{{t}}</li>
+    {%endfor %}
+</ul>{% endif %}

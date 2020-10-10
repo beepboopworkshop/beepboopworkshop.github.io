@@ -1,0 +1,24 @@
+title: Beepboop Electronics Workshop
+email: beepboopbristol@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  We repair Eurorack, synthesisers, amplifiers, DJ and other
+  equipment. Join our weekly group DIY workshop or book an
+  individual build session. We also stock a wide range of
+  Synth DIY PCBs, panels, kits, tools and parts. Electronics
+  tuition available.
+baseurl: ""
+url: ""
+github_username:  beepboopworkshop
+facebook: https://www.facebook.com/beepboopbristol
+exclude:
+  - LICENSE
+
+collections:
+  workshops:
+    output: true
+    sort_by: name
+    permalink: /workshops/:title/index.html
+  kits:
+    output: true
+    sort_by: name
+    permalink: /kits/:title/index.html
