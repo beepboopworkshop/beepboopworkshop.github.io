@@ -1,14 +1,14 @@
 <ul>
-    <li>Kits:
-        <ul class="horizontal">
-            {% for k in site.kits %}
-            <li><a href="{{k.url}}">{{ k.kit_name }}</a></li>
+    <li>Our Workshops: <ul class="horizontal">
+            {% for w in site.workshops %}
+            <li><a href="{{w.url}}">{{w.workshop_name}}</a></li>
             {% endfor %}
         </ul>
     </li>
-    <li>Workshops: <ul class="horizontal">
-            {% for w in site.workshops %}
-            <li><a href="{{w.url}}">{{w.workshop_name}}</a></li>
+    <li>Our Kits:
+        <ul class="horizontal">
+            {% for k in site.kits %}
+            <li><a href="{{k.url}}">{{ k.kit_name }}</a></li>
             {% endfor %}
         </ul>
     </li>

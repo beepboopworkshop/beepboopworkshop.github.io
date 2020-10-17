@@ -4,6 +4,7 @@ kit_name: Beepboop Tape Sampler
 category: kits
 workshop: tape-sampler
 price: £60
+level: beginner
 tags:
   - throughhole
   - lofi

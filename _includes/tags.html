@@ -1,0 +1,7 @@
+{% if page.tags %}
+<ul class="horizontal tags small">
+    {% for t in page.tags %}
+    <li>{{t}}</li>
+    {%endfor %}
+</ul>
+{% endif %}

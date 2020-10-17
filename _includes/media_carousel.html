@@ -1,0 +1,9 @@
+{% if include.media %}
+<div class="carousel">
+    <div style="width: {{include.media.size | times: 250}};">
+        {% for i in include.media %}
+        <a href="{{i}}"><img src="{{i}}" /></a>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}

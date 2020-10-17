@@ -10,5 +10,7 @@ tags:
   - lofi
   - sampler
   - eurorack
+media:
+
 ---
 A workshop to build our first available kit, a noisy little sampler!
